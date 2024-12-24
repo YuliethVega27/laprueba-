@@ -30,7 +30,7 @@ const appendToSheet = async (data) => {
                 type: process.env.TYPE,
                 project_id: process.env.PROJECT_ID,
                 private_key_id: process.env.PRIVATE_KEY_ID,
-                private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'), // Asegúrate de que las nuevas líneas estén correctamente formateadas
+                private_key: process.env.PRIVATE_KEY,// Asegúrate de que las nuevas líneas estén correctamente formateadas
                 client_email: process.env.CLIENT_EMAIL,
                 client_id: process.env.CLIENT_ID,
                 auth_uri: process.env.AUTH_URI,
